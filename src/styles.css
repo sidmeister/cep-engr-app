@@ -1,1 +1,24 @@
-// All of your CSS goes here
+/* style for header */
+.headerImage{
+    height: 5%;
+    width:100%;
+}
+.headerDiv{
+    text-align: center;
+    color:white;
+}
+.headingText {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* style for side image */
+.sideImage{
+    width:100%;
+    height:70%;
+}
+/* style for description  */
+.descBackground{
+    background-color:#dae1ed;
+}
