@@ -17,13 +17,13 @@
         <img src="../img/header.jpg" alt="Skyline" class="headerImage"/>
         <h1 class="headingText">Traveling</h1>
     </div><br/>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-1"></div>
       <div class="col-md-2">
-        <button type="button" class="firstName btn btn-info" id="first_name_btn">First Name</button> 
+        <button type="button" class="btn btn-info btn-arrow-right" id="first_name_btn">First Name</button> 
       </div> 
       <div class="col-md-2">
-        <button type="button" class="btn btn-info btn" id="last_name_btn">Last Name</button>
+        <button type="button" class="btn btn-info btn-arrow-right" id="last_name_btn">Last Name</button>
       </div>
       <div class="col-md-2">
         <button type="button" class="btn btn-info btn" id="home_office_btn">Home Office</button>
@@ -35,34 +35,40 @@
         <button type="button" class="btn btn-info btn" id="about_btn">About Me</button>
       </div>
     </div><br/>
-  <div class="row">
+    -->
+    <div class="row">
+      <div class="col-md-2 vcenter">
+      <div class="btnBox">
+        <button type="button" class="btn" id="first_name_btn">First Name</button> <br/><br/>
+     
+        <button type="button" class="btn" id="last_name_btn">Last Name</button><br/><br/>
+     
+        <button type="button" class="btn" id="home_office_btn">Home Office</button><br/><br/>
+     
+        <button type="button" class="btn" id="job_title_btn">Job Title</button><br/><br/>
+      
+        <button type="button" class="btn" id="about_btn">About Me</button>
+    </div>
+    </div> 
+    <div class="col-md-4 descBackground vcenter">
+        <div class="descBox">
+          <p id="detailBox"></p>
+        </div>
+    </div>
+    <div class="col-md-6 vcenter">
+        <div class="imageBox">
+          <img src="../img/bigData.jpg" alt="BigData" class="sideImage"/>
+        </div>
+    </div>
+  </div>
+  <!-- <div class="row">
     <div class="col-md-6" >
       <img src="../img/bigData.jpg" alt="BigData" class="sideImage"/>
     </div>
     <div class="col-md-5 descBackground">
       <p id="detailBox"></p>
     </div>
-  </div>
+  </div> -->
 
-    <!-- <div class="row">
-      <form id="travelForm">
-    
-        <label>Last Name</label>
-        <input id= "last_name" name="lastName" type="text"/><br/><br/>
-        <label>Home Office</label>
-        <input id="home_office" name="homeOffice" type="text"/><br/><br/>
-        <label>Job Title</label>
-        <input id="job_title" name="jobTitle" type="text"/><br/><br/>
-        <label>Tell about yourself</label>
-        <textarea id="detail_textarea" name="detailTextarea"></textarea><br/>
-        <button id="firstNameBtn" type="button"> First Name</button>
-        <p id="first_name"></p>
-        <button id="lastNameBtn" type="submit"> Last Name</button><br/>
-        
-        <button id="submitBtn" type="submit"> Submit your details</button>
-      </form>
-       
-    </div>
-    <h1>Traveling</h1> -->
-   </body>
+  </body>
 </html>
