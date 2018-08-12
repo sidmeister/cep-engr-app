@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CEP Engineering Application</title>
+    <title>CEP Engineering Application - Siddharth Rathi</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -13,62 +13,32 @@
   <body>
     <script src="init.js"></script>
     <!-- Header with image  -->
-    <div class="row headerDiv">
-        <img src="../img/header.jpg" alt="Skyline" class="headerImage"/>
-        <h1 class="headingText">Traveling</h1>
-    </div><br/>
-    <!-- <div class="row">
-        <div class="col-md-1"></div>
-      <div class="col-md-2">
-        <button type="button" class="btn btn-info btn-arrow-right" id="first_name_btn">First Name</button> 
-      </div> 
-      <div class="col-md-2">
-        <button type="button" class="btn btn-info btn-arrow-right" id="last_name_btn">Last Name</button>
-      </div>
-      <div class="col-md-2">
-        <button type="button" class="btn btn-info btn" id="home_office_btn">Home Office</button>
-      </div>
-      <div class="col-md-2">
-        <button type="button" class="btn btn-info btn" id="job_title_btn">Job Title</button>
-      </div>
-      <div class="col-md-2">
-        <button type="button" class="btn btn-info btn" id="about_btn">About Me</button>
-      </div>
-    </div><br/>
-    -->
+    <header>
+        <div class="row headerDiv">
+            <img src="../img/header.jpg" alt="Skyline" class="headerImage"/>
+            <div class="headingText">
+                <h1>My Story</h1>
+                <h3 class="subHeadingText">Me Myself and I</h3>
+            </div>
+       </div><br/>   
+        
+    </header>
     <div class="row">
-      <div class="col-md-2 vcenter">
-      <div class="btnBox">
-        <button type="button" class="btn" id="first_name_btn">First Name</button> <br/><br/>
-     
-        <button type="button" class="btn" id="last_name_btn">Last Name</button><br/><br/>
-     
-        <button type="button" class="btn" id="home_office_btn">Home Office</button><br/><br/>
-     
-        <button type="button" class="btn" id="job_title_btn">Job Title</button><br/><br/>
-      
-        <button type="button" class="btn" id="about_btn">Tell Me More </button>
+      <div class="col-md-2 btnBox vcenter">
+          <button type="button" class="btn" id="first_name_btn">First Name</button> <br/><br/>
+          <button type="button" class="btn" id="last_name_btn">Last Name</button><br/><br/>
+          <button type="button" class="btn" id="home_office_btn">Home Office</button><br/><br/>
+          <button type="button" class="btn" id="job_title_btn">Job Title</button><br/><br/>
+          <button type="button" class="btn" id="about_btn">Tell Me More </button>
+      </div> 
+      <div id='defaultShow' class = 'mainPage'> This a website about my story
+        <br/> Click on any of the left side buttons to learn more. I promise it will be worth it
+      </div>
+    <div class="col-md-4 descBox vcenter" id="detailBox">
     </div>
-    </div> 
-    <div class="col-md-4 descBackground vcenter">
-        <div class="descBox">
-          <p id="detailBox"></p>
-        </div>
-    </div>
-    <div class="col-md-6 vcenter">
-        <div class="imageBox">
-          <!-- <img src="../img/bigData.jpg" alt="BigData" class="sideImage"/> -->
-        </div>
+    <div class="col-md-6 vcenter imageBox">
+          <img id="imageToBeDisplayed" class="sideImage"/>
     </div>
   </div>
-  <!-- <div class="row">
-    <div class="col-md-6" >
-      <img src="../img/bigData.jpg" alt="BigData" class="sideImage"/>
-    </div>
-    <div class="col-md-5 descBackground">
-      <p id="detailBox"></p>
-    </div>
-  </div> -->
-
   </body>
 </html>
