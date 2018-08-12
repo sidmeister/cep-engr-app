@@ -6,9 +6,13 @@ body {
     min-height:100%!important;
     top: 0;
     bottom: 0;
-    padding-bottom: 20px;
+    margin:0;
+    padding-bottom: 0px;
     position: absolute;
 }
+*{border:1px solid red;
+margin:0!important;
+padding:0!important;}
 .vcenter{
     height:90%!important;
 }
@@ -41,7 +45,7 @@ body {
 /* style for side image */
 .sideImage{
     width:100%;
-    height:70%;
+    /* height:70%; */
 }
 
 /* style for description  */
@@ -49,7 +53,7 @@ body {
     /* background-color:#dae1ed; */
     background: -webkit-linear-gradient(top, #d0d7f2,#f1f1f1);
     /* margin-top:1%; */
-    height:40%; 
+    /* height:40%;  */
 }
 /* style for vertical alignment of page */
 .btnBox{
@@ -69,7 +73,7 @@ body {
 
     padding-bottom: 2%;
     border: none;
-    height: 600px;
+    /* height: 600px; */
     width: 90%;
     margin-left: 10;
     margin-bottom: 5%;
