@@ -5,11 +5,7 @@ let person={
     _jobTitle:'Staff Big Data Engineer',
     _homeOffice:'HomeAway',
     _tellMeMore:'I am originally from west part of India. I love Traveling and one of my fond memories is doing a road trip of the west coast with my wife. Some of the key highlights were driving and enjoying the goregous view on CA-1, riding the buggy on the sand dunes in Oregon, hiking down Mount Shashta,spending time on the picturesque Canyon beach, to visiting the space needle. This is me with my wife posing at the Multnomah Falls, Oregon',
-    //TODO: change images for all
-    //TODO: add different text for each button
-    //TODO: Format heading
 
-//adding ~ to indicate new line break in html. Adding a <br/> here did not work
   //Getter  _firstName 
     get firstName(){
         return this._firstName;
@@ -40,13 +36,11 @@ $(document).ready(function(){
 
     //common functionality for all buttons
     let displayDetailBoxHelper = function(textString){
-         
-        // $("button").click(function () {
             //show Description Div and Picture by default
+            $('#defaultShow').hide();
             $('.descBox, .sideImage').show();
             //replacing the ~ special character with br to change for line break
            $('#detailBox').text('').append(textString);
-        // })
     }
       
     //Information to be displayed if first name button is clicked
