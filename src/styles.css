@@ -1,17 +1,28 @@
 /* style for header */
 .headerImage{
-    height: 5%;
+    height:250px;
     width:100%;
 }
 .headerDiv{
     text-align: center;
-    color:white;
+    color:black;
 }
-.headingText {
+.headingText{
     position: absolute;
-    top: 30%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: Georgia, Times, "Times New Roman", serif; 
+    /* font-size: 24px;  */
+    font-style: bold;  
+    font-weight: 800;
+}
+.subHeadingText{
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
 }
 /* style for side image */
 .sideImage{
@@ -23,7 +34,7 @@
 .descBackground{
     /* background-color:#dae1ed; */
     background: -webkit-linear-gradient(top, #d0d7f2,#f1f1f1);
-    margin-top:1%;
+    /* margin-top:1%; */
     height:40%; 
 }
 /* style for vertical alignment of page */
@@ -32,18 +43,28 @@
     background: -webkit-linear-gradient(top, #d0d7f2,#f1f1f1);
     margin-bottom: 5%;
     margin-left: 10%;
-    margin-top:5%;
+    margin-top:0%;
     padding-right: 0.2em;
-    padding-top: 1.2em;
+    padding-top: 0.2em;
 }
 .imageBox{
-    padding-bottom: 2%;
+    /* padding-bottom: 2%;
     border:none;
     margin-bottom: 5%;
+    padding-right: 0.2em; */
+
+    padding-bottom: 2%;
+    border: none;
+    height: 600px;
+    width: 90%;
+    margin-left: 10;
+    margin-bottom: 5%;
     padding-right: 0.2em;
+    margin-left: 10%;
 }
 .descBox{
     padding-bottom: 0%;
+    padding-top: 5%;
     margin-bottom: 5%;
     margin-right: 4%;
     padding-right: 0.2em;

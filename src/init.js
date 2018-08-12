@@ -4,7 +4,7 @@ let person={
     _lastName:'Rathi',
     _jobTitle:'Staff Big Data Engineer',
     _homeOffice:'HomeAway',
-    _tellMeMore:'I am originally from west part of India. My biggest passion is Traveling and one of my fond memories is doing a road trip of the west coast with my wife.Some of the key highlights were driving and enjoying the goregous view on CA - 1, riding the buggy on the sand dunes in Oregon, spending time on the picturesque Canyon beach, to visiting the space needle.  This is a photo with my wife on that trip',    
+    _tellMeMore:'I am originally from west part of India. I love Traveling and one of my fond memories is doing a road trip of the west coast with my wife. Some of the key highlights were driving and enjoying the goregous view on CA-1, riding the buggy on the sand dunes in Oregon, hiking down Mount Shashta,spending time on the picturesque Canyon beach, to visiting the space needle. This is me with my wife posing at the Multnomah Falls, Oregon',
     //TODO: change images for all
     //TODO: add different text for each button
     //TODO: Format heading
@@ -58,19 +58,22 @@ $(document).ready(function(){
         miscDetail = intro +  mythology_fact +  urban_dict_fact + endIntro;
         //using Jquery text function to display text from Java script method having firstName property
         displayDetailBoxHelper('Howdy! My name is ' + person.firstName + miscDetail);
+        $('#imageToBeDisplayed').attr("src","../img/first_name.jpg");
     });
 
     //Information to be displayed if last name button is clicked
     $('#last_name_btn').click(function(e){
         //using Jquery text function to display text from Java script object having lastName property
-        displayDetailBoxHelper('My Last name is ' + person.lastName + ' No fun facts here. Its just a family name');
+        displayDetailBoxHelper('My Last name is ' + person.lastName + '.No fun facts here its just a family name');
+        $('#imageToBeDisplayed').attr("src","../img/last_name.jpg");
     });
 
     //Information to be displayed if homeOffice button is clicked
     $('#home_office_btn').click(function(e){
-        var homeaway_details = "<br/>It is a vacation rental marketplace with more than 2, 000, 000 vacation rentals in 190 countries listed on its website. It operates through 50 websites in 23 languages.The company offers rentals for families and groups in cabins, condos, castles, villas, barns and farm houses. Founded in February 2005 and headquartered in Austin, the company became a publicly traded company in 2011. Expedia Inc.acquired HomeAway on December 15, 2015. <br/> Source :  https://en.wikipedia.org/wiki/HomeAway";
+        var homeaway_details = ".It is a vacation rental marketplace with more than 2,000,000 vacation rentals in 190 countries listed on its website. It operates through 50 websites in 23 languages.The company offers rentals for families and groups in cabins, condos, castles, villas, barns and farm houses. Founded in February 2005 and headquartered in Austin, the company became a publicly traded company in 2011. Expedia Inc.acquired HomeAway on December 15, 2015. <br/> Source : <a href='https://en.wikipedia.org/wiki/HomeAway' target ='_blank'> https://en.wikipedia.org/wiki/HomeAway</a>";
         //using Jquery text function to display text from Java script getter method returning homeOffice property
         displayDetailBoxHelper('I work at ' + person.homeOffice + homeaway_details);
+        $('.imageBox').show();
         $('#imageToBeDisplayed').attr("src","../img/homeaway.jpg");
 
     });
@@ -78,7 +81,7 @@ $(document).ready(function(){
     //Information to be displayed if Job Title button is clicked
     $('#job_title_btn').click(function(e){
         var jobDesc = "<br/>Big data engineers develop, maintain, test and evaluate big data solutions within organisations. Most of the time they are also involved in the design of big data solutions, because of the experience they have in Apache Spark or Hadoop based technologies such as MapReduce, Hive MongoDB or Cassandra";
-        var myDuties = '<br/>My primary responsibility <ul> <li> is performing data cleansing enrichment,data conversion through data de-duplication and construction (ETL) </li> <li> I develop, test and maintain big data pipelines within Homeaway.Most of my time is spent in transforming, wrangling, and manipulating data using Spark and Hadoop based technologies such as Map - Reduce, Presto, Hive</li></ul>'
+        var myDuties = '<br/>My primary responsibility <ul> <li>Performing data cleansing enrichment,data conversion through data de-duplication and construction (ETL) </li> <li> I develop, test and maintain big data pipelines within Homeaway.Most of my time is spent in transforming, wrangling, and manipulating data using Spark and Hadoop based technologies such as Map - Reduce, Presto, Hive</li></ul>'
         //using Jquery text function to display text from Java script object having jobTitle property
         displayDetailBoxHelper('My Job Title is ' + person.jobTitle + jobDesc + myDuties);
         $('#imageToBeDisplayed').attr("src","../img/bigData.jpg");
@@ -87,8 +90,10 @@ $(document).ready(function(){
 
     //Information to be displayed if About me button is clicked
     $('#about_btn').click(function(e){
+        var moreDetail = "<br/>";
         //show Description Div and Picture by default
         //using Jquery text function to display text from Java script method which is having firstName property
         displayDetailBoxHelper(person.tellMeMore);
+        $('#imageToBeDisplayed').attr("src","../img/tellmemore.jpg");
     });
 });
