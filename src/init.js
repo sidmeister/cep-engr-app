@@ -74,7 +74,7 @@ $(document).ready(function(){
         //using Jquery text function to display text from Java script getter method returning homeOffice property
         displayDetailBoxHelper('I work at ' + person.homeOffice + homeaway_details);
         $('.imageBox').show();
-        $('#imageToBeDisplayed').attr("src","../img/homeaway.jpg");
+        $('#imageToBeDisplayed').attr("src","../img/homeaway.jpg").attr("style","height:40%;");
 
     });
 
@@ -84,7 +84,7 @@ $(document).ready(function(){
         var myDuties = '<br/>My primary responsibility <ul> <li>Performing data cleansing enrichment,data conversion through data de-duplication and construction (ETL) </li> <li> I develop, test and maintain big data pipelines within Homeaway.Most of my time is spent in transforming, wrangling, and manipulating data using Spark and Hadoop based technologies such as Map - Reduce, Presto, Hive</li></ul>'
         //using Jquery text function to display text from Java script object having jobTitle property
         displayDetailBoxHelper('My Job Title is ' + person.jobTitle + jobDesc + myDuties);
-        $('#imageToBeDisplayed').attr("src","../img/bigData.jpg");
+        $('#imageToBeDisplayed').attr("src","../img/big-data.jpg").attr("style","height:60%;");
 
     });
 

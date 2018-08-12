@@ -1,3 +1,17 @@
+html{
+    height:100%!important;
+    margin: 0
+}
+body {
+    min-height:100%!important;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 20px;
+    position: absolute;
+}
+.vcenter{
+    height:90%!important;
+}
 /* style for header */
 .headerImage{
     height:250px;
