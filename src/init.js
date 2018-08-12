@@ -48,7 +48,7 @@ $(document).ready(function(){
            $('#detailBox').text('').append(textString);
         // })
     }
-    
+      
     //Information to be displayed if first name button is clicked
     $('#first_name_btn').click(function(e){
         var intro = "<br/>Some facts about the name Siddharth";
@@ -71,7 +71,7 @@ $(document).ready(function(){
         var homeaway_details = "<br/>It is a vacation rental marketplace with more than 2, 000, 000 vacation rentals in 190 countries listed on its website. It operates through 50 websites in 23 languages.The company offers rentals for families and groups in cabins, condos, castles, villas, barns and farm houses. Founded in February 2005 and headquartered in Austin, the company became a publicly traded company in 2011. Expedia Inc.acquired HomeAway on December 15, 2015. <br/> Source :  https://en.wikipedia.org/wiki/HomeAway";
         //using Jquery text function to display text from Java script getter method returning homeOffice property
         displayDetailBoxHelper('I work at ' + person.homeOffice + homeaway_details);
-        $('imageBox').append('<p> hello</p>');
+        $('#imageToBeDisplayed').attr("src","../img/homeaway.jpg");
 
     });
 
@@ -81,7 +81,7 @@ $(document).ready(function(){
         var myDuties = '<br/>My primary responsibility <ul> <li> is performing data cleansing enrichment,data conversion through data de-duplication and construction (ETL) </li> <li> I develop, test and maintain big data pipelines within Homeaway.Most of my time is spent in transforming, wrangling, and manipulating data using Spark and Hadoop based technologies such as Map - Reduce, Presto, Hive</li></ul>'
         //using Jquery text function to display text from Java script object having jobTitle property
         displayDetailBoxHelper('My Job Title is ' + person.jobTitle + jobDesc + myDuties);
-        $('imageBox').append('<img src="../img/bigData.jpg" alt="bigData" class="sideImage"/>');
+        $('#imageToBeDisplayed').attr("src","../img/bigData.jpg");
 
     });
 
