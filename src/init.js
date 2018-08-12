@@ -36,14 +36,14 @@ let person={
 // using jQuery and the object above, display the information as the appropriate button is clicked
 $(document).ready(function(){
     //hide Description Div and Picture by default
-    $('.descBackground, .sideImage').hide();
+    $('.descBox, .sideImage').hide();
 
     //common functionality for all buttons
     let displayDetailBoxHelper = function(textString){
          
         // $("button").click(function () {
             //show Description Div and Picture by default
-            $('.descBackground, .sideImage').show();
+            $('.descBox, .sideImage').show();
             //replacing the ~ special character with br to change for line break
            $('#detailBox').text('').append(textString);
         // })
